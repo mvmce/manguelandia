@@ -580,7 +580,7 @@
       /* Mescla o gradiente de desbotamento com a imagem dos grãos */
       background-image: 
         linear-gradient(to right, var(--coffee) 35%, transparent 85%), 
-        url('beans.jpg');
+        url('beans.webp');
       background-color: var(--coffee); /* Cor de fundo base */
       background-repeat: no-repeat;
       background-position: right top;
@@ -604,7 +604,7 @@
       pointer-events: none;
       opacity: 0.09; /*Transparência do café atrás*/
       background-image:
-        url("../img/beans.jpg");
+        url("../img/beans.webp");
     }
     .cafe__inner { position: relative; z-index: 1; }
     .cafe__head  { margin-bottom: 30px; }
