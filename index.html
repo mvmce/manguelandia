@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fazenda Manguelândia — O café da nossa fazenda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Menu principal">
+    <div class="nav__logo">
+      <div class="nav__logo-mark">M</div>
+      <span class="nav__logo-name">Fazenda Manguelândia<br>Café Especial</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#a-fazenda">A Fazenda</a></li>
+      <li><a href="#nosso-cafe">Nosso Café</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#empresas">Empresas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#contato" class="nav__order">Encomendar</a>
+    <button class="nav__burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="nav__overlay" id="mobileOverlay" role="dialog" aria-label="Navegação mobile">
+    <a href="#a-fazenda" class="m-link">A Fazenda</a>
+    <a href="#nosso-cafe" class="m-link">Nosso Café</a>
+    <a href="#processo" class="m-link">Processo</a>
+    <a href="#empresas" class="m-link">Empresas</a>
+    <a href="#contato" class="m-link">Contato</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="O café da nossa fazenda">
+    <div class="hero__bg-wrap" aria-hidden="true">
+      <img src="img/hero-plantation.jpg"
+           alt="Foto da plantação"
+           class="hero__bg" />
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <div class="hero__kicker">
+        <span class="hero__kicker-rule"></span>
+        <span class="hero__kicker-text">Minas Gerais · Desde 1967</span>
+        <span class="hero__kicker-rule"></span>
+      </div>
+      <h1 class="hero__title">O café da<br><em>nossa fazenda</em></h1>
+      <p class="hero__sub">Arábica puro cultivado a 1.250 metros nas montanhas dos Campos das Vertentes. Torrado sob encomenda. Servido com a calma de quem aprendeu o ofício no fogão à lenha.</p>
+      <div class="hero__cta-wrap">
+        <a href="#nosso-cafe" class="btn-ghost">Conheça nossos cafés &rarr;</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro section-pad reveal">
+    <div class="container">
+      <h2 class="intro__title">Há mais de meio século, <em>o tempo do café é o nosso tempo.</em></h2>
+      <p class="intro__body">Nas montanhas frias dos Campos das Vertentes, em Minas Gerais, cultivamos arábica puro grão a grão — com a mesma paciência das manhãs de neblina, do fogão aceso antes do sol e do café passado no coador de pano. Cada xícara carrega a memória da fazenda colonial, o aroma da terra úmida e a tradição que herdamos da família.</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item reveal reveal-d1">
+          <div class="stats__num">1.250m</div>
+          <div class="stats__rule"></div>
+          <div class="stats__label">Altitude de cultivo</div>
+        </div>
+        <div class="stats__item reveal reveal-d2">
+          <div class="stats__num">84+</div>
+          <div class="stats__rule"></div>
+          <div class="stats__label">Pontos SCA</div>
+        </div>
+        <div class="stats__item reveal reveal-d3">
+          <div class="stats__num">1967</div>
+          <div class="stats__rule"></div>
+          <div class="stats__label">Tradição Familiar</div>
+        </div>
+        <div class="stats__item reveal reveal-d4">
+          <div class="stats__num">100%</div>
+          <div class="stats__rule"></div>
+          <div class="stats__label">Arábica de origem única</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A FAZENDA -->
+  <section id="a-fazenda" class="section-pad">
+    <div class="container">
+      <div class="fazenda__grid">
+        <div class="fazenda__img-wrap reveal">
+          <img src="img/fazenda.jpg"
+               alt="Casa colonial da fazenda com telhado de barro e alpendre em madeira"
+               class="fazenda__img" />
+          <div class="fazenda__badge">Desde 1967</div>
+        </div>
+        <div class="reveal reveal-d2">
+          <span class="eyebrow">A Fazenda</span>
+          <h2 class="fazenda__title">A casa colonial, as montanhas e o terreiro de secagem.</h2>
+          <div class="ornament ornament-rule"></div>
+          <p class="fazenda__body">A Fazenda Manguelândia nasceu no coração de Minas Gerais, na região dos Campos das Vertentes — terra de relevo dobrado, clima fresco e noites frias que dão ao café o tempo necessário para amadurecer com complexidade e doçura.</p>
+          <p class="fazenda__body">A sede colonial, com seu telhado de telhas de barro e a varanda de madeira voltada para as lavouras, continua sendo o coração da propriedade. Dali se vê o terreiro de secagem, o galpão de beneficiamento e, ao fundo, as fileiras intermináveis de cafezais subindo pelas encostas.</p>
+          <p class="fazenda__body">Aqui, três gerações aprenderam que o bom café se faz com presença — a mesma presença que coloca a lenha no fogão antes do amanhecer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSO CAFÉ -->
+  <section id="nosso-cafe" class="section-pad">
+    <div class="cafe__inner container"> <!--COLOCAR FOTO BEANS.JPG DE FUNDO POR AQUI-->
+      <div class="cafe__head reveal">
+        <span class="eyebrow eyebrow--light">Nosso Café</span>
+        <h2 class="cafe__title">Arábica puro, <em>acima de<br>84 pontos.</em></h2>
+        <p class="cafe__sub">Cultivamos cinco variedades selecionadas, cada uma com seu perfil sensorial único. Todos os nossos lotes são avaliados por classificadores Q-Graders e superam a marca dos 84 pontos pela escala SCA — o patamar dos cafés especiais.</p>
+      </div>
+
+      <div class="cafe__grid">
+        <article class="cafe__card reveal reveal-d1">
+          <div class="cafe__card-idx">&#x2615;</div>
+          <h3 class="cafe__card-name">Catuaí Amarelo</h3>
+          <p class="cafe__card-desc">Caramelo, pera e castanha. Corpo médio com acidez cítrica equilibrada.</p>
+          <span class="cafe__card-link">85+ PTS</span>
+        </article>
+        <article class="cafe__card reveal reveal-d2">
+          <div class="cafe__card-idx">&#x2615;</div>
+          <h3 class="cafe__card-name">Catuaí Vermelho</h3>
+          <p class="cafe__card-desc">Perfil achocolatado e frutado. Doçura pronunciada com notas de ameixa e mel.</p>
+          <span class="cafe__card-link">85+ PTS</span>
+        </article>
+        <article class="cafe__card reveal reveal-d3">
+          <div class="cafe__card-idx">&#x2615;</div>
+          <h3 class="cafe__card-name">Bourbon</h3>
+          <p class="cafe__card-desc">Clássico das altitudes. Complexidade aromática com frutado tropical e final longo.</p>
+          <span class="cafe__card-link">86+ PTS</span>
+        </article>
+        <article class="cafe__card reveal reveal-d1">
+          <div class="cafe__card-idx">&#x2615;</div>
+          <h3 class="cafe__card-name">Topázio</h3>
+          <p class="cafe__card-desc">Perfil suave e adocicado, preferido nos blends especiais de alta altitude.</p>
+          <span class="cafe__card-link">85+ PTS</span>
+        </article>
+        <article class="cafe__card reveal reveal-d2">
+          <div class="cafe__card-idx">&#x2615;</div>
+          <h3 class="cafe__card-name">24/137</h3>
+          <p class="cafe__card-desc">Microlote exclusivo. Apenas 137 sacas anuais, colhidas manualmente no ponto exato.</p>
+          <span class="cafe__card-link">84+ PTS</span>
+        </article>
+        <article class="cafe__card cafe__card--accent reveal reveal-d3">
+          <div class="cafe__card-idx">✦</div>
+          <h3 class="cafe__card-name">Torra sob encomenda</h3>
+          <p class="cafe__card-desc">Cada lote é torrado somente após o pedido, garantindo o frescor que define um café especial verdadeiro.</p>
+          <span class="cafe__card-link">Encomendar agora &rarr;</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="section-pad">
+    <div class="container">
+      <div class="processo__grid">
+        <div class="reveal">
+          <img src="img/coador.jpg"
+               alt="Café sendo passado em coador artesanal à beira de lareira"
+               class="processo__img" />
+        </div>
+        <div class="reveal reveal-d2">
+          <span class="eyebrow">O Processo</span>
+          <h2 class="processo__title">Do pé do café à <em>sua xícara,</em> sem pressa.</h2>
+          <p class="empresas__body">Acreditamos que café especial não se faz em escala — se faz em atenção. Cada etapa do nosso processo é conduzida artesanalmente, com a paciência que apenas a tradição familiar permite.</p>
+          <div class="processo__steps">
+            <div class="processo__step">
+              <div class="step__num">01</div>
+              <h3 class="step__name">Colheita seletiva</h3>
+              <p class="step__desc">Cada fruto colhido à mão, no momento exato de maturação ideal.</p>
+            </div>
+            <div class="processo__step">
+              <div class="step__num">02</div>
+              <h3 class="step__name">Secagem no terreiro</h3>
+              <p class="step__desc">Grãos secados ao sol em terreiro suspenso por 20 a 30 dias.</p>
+            </div>
+            <div class="processo__step">
+              <div class="step__num">03</div>
+              <h3 class="step__name">Seleção precisa</h3>
+              <p class="step__desc">Peneiragem por densidade e tamanho, eliminando defeitos.</p>
+            </div>
+            <div class="processo__step">
+              <div class="step__num">04</div>
+              <h3 class="step__name">Torra sob encomenda</h3>
+              <p class="step__desc">Enviado fresco, nunca estocado. A torra acontece após o pedido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <div class="quote-banner">
+    <div class="quote-banner__bg-wrap" aria-hidden="true">
+      <img src="img/terreiro.jpg"
+           alt=""
+           class="quote-banner__bg" />
+    </div>
+    <div class="quote-banner__overlay" aria-hidden="true"></div>
+    <div class="quote-banner__content container reveal">
+      <p class="quote-banner__label">Terreiro de Secagem</p>
+      <blockquote class="quote-banner__text">
+        "A doçura do café vem do tempo que ele passa no sol e da paciência de quem o revira."
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- EMPRESAS -->
+  <section id="empresas" class="section-pad">
+    <div class="container">
+      <div class="empresas__grid">
+        <div class="reveal">
+          <span class="eyebrow">Para Empresas</span>
+          <h2 class="empresas__title">Sua marca, <em>no nosso café.</em></h2>
+          <p class="empresas__body">Criamos linhas personalizadas de café especial para empresas, hotéis-fazenda, restaurantes e presentes corporativos. Embalagens premium em diversos tamanhos, com possibilidade de inserir sua logomarca em rótulos de papel artesanal e detalhes em cobre.</p>
+          <div class="empresas__options">
+            <div class="option-card active" data-opt>
+              <div class="option-card__label">Quantidade</div>
+              <div class="option-card__val">250g</div>
+            </div>
+            <div class="option-card" data-opt>
+              <div class="option-card__label">Quantidade</div>
+              <div class="option-card__val">500g</div>
+            </div>
+            <div class="option-card" data-opt>
+              <div class="option-card__label">Quantidade</div>
+              <div class="option-card__val">1kg</div>
+            </div>
+            <div class="option-card" data-opt>
+              <div class="option-card__label">Opção</div>
+              <div class="option-card__val">Sob medida</div>
+            </div>
+          </div>
+          <a href="#contato" class="btn-solid">Solicitar proposta &rarr;</a>
+        </div>
+        <div class="reveal reveal-d2">
+          <img src="img/packaging.jpg"
+               alt="Embalagens de café da fazenda em diferentes tamanhos"
+               class="empresas__img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FECHAMENTO -->
+  <section class="fechamento section-pad">
+    <div class="container">
+      <div class="fechamento__grid">
+        <div class="reveal">
+          <img src="img/cup.jpg"
+               alt="Xícara de café com ramos de café cereja ao fundo"
+               class="fechamento__img" />
+        </div>
+        <div class="reveal reveal-d2">
+          <span class="eyebrow">Experiência</span>
+          <h2 class="fechamento__title">Feche os olhos. <em>É manhã na fazenda.</em></h2>
+          <p class="fechamento__body">A brisa das montanhas ainda fria. O cheiro do café moído se espalhando pela cozinha da casa colonial. O silêncio quebrado só pelo canto dos pássaros.</p>
+          <p class="fechamento__body">Cada gole guarda essa memória — da terra, do tempo e do cuidado de quem cultiva com amor.</p>
+          <p class="fechamento__sign">É esse café que enviamos para você.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTATO -->
+  <footer id="contato">
+    <div class="footer__inner section-pad">
+      <div class="container">
+
+        <!-- CTA Block -->
+        <div class="footer__cta reveal">
+          <h2 class="footer__cta-title">Encomende seu café <em>direto da fazenda.</em></h2>
+          <p class="footer__cta-body">Pedidos personalizados, amostras, parcerias corporativas ou apenas uma boa conversa sobre café — adoraríamos receber você.</p>
+          <a href="mailto:manguelandia@gmail.com" class="btn-solid">Fazer pedido agora &rarr;</a>
+        </div>
+
+        <!-- Ornament -->
+        <div class="ornament ornament-rule footer__ornament"></div>
+
+        <!-- Cols -->
+        <div class="footer__cols">
+          <div>
+            <div class="footer__brand">Fazenda Manguelândia</div>
+            <p class="footer__brand-desc">Café especial de origem única das montanhas de Minas Gerais, cultivado desde 1967 com cuidado e tradição.</p>
+          </div>
+          <div>
+            <div class="footer__col-hd">Navegação</div>
+            <ul class="footer__links">
+              <li><a href="#a-fazenda">A Fazenda</a></li>
+              <li><a href="#nosso-cafe">Nosso Café</a></li>
+              <li><a href="#processo">Processo</a></li>
+              <li><a href="#empresas">Empresas</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer__col-hd">Variedades</div>
+            <ul class="footer__links">
+              <li><a href="#nosso-cafe">Catuaí Amarelo</a></li>
+              <li><a href="#nosso-cafe">Catuaí Vermelho</a></li>
+              <li><a href="#nosso-cafe">Bourbon</a></li>
+              <li><a href="#nosso-cafe">Topázio</a></li>
+              <li><a href="#nosso-cafe">24/137</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer__col-hd">Contato</div>
+            <p class="footer__contact-line">manguelandia@gmail.com</p>
+            <p class="footer__contact-line">+55 (37) 99904-3175</p>
+            <p class="footer__contact-line">Minas Gerais, Brasil<br>Campos das Vertentes</p>
+          </div>
+        </div>
+
+        <!-- Ornament -->
+        <div class="ornament ornament-rule footer__ornament"></div>
+
+        <!-- Bottom -->
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2025 Fazenda Manguelândia. Todos os direitos reservados.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/manguelandia"  target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/@manguelandia?lang=pt-BR" aria-label="Facebook" target="_blank">Tiktok</a>
+            <a href="tel:+55379999043175" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
